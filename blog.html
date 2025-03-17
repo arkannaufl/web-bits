@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogor Islamic Techno School</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body style="font-family: 'Inter';">
+
+    <nav class="w-full px-8 py-5 border-b border-[#E9EAEB]">
+        <div class="w-full md:w-3/4 mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <img src="assets/logo_bits.svg" alt="Logo BITS" class="h-10">
+
+            <!-- Hamburger Icon for Mobile -->
+            <button id="menu-toggle" class="md:hidden focus:outline-none z-50">
+                <!-- Bar Icon (Default) -->
+                <svg id="bar-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!-- Close Icon (Hidden by Default) -->
+                <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex md:space-x-6 text-[#717680]">
+                <li><a href="index.html" class="hover:text-[#19918F]">Home</a></li>
+                <li><a href="ppdb.html" class="hover:text-[#19918F]">PPDB</a></li>
+                <li><a href="#blog" class="hover:text-[#19918F]">Blog</a></li>
+                <li><a href="index.html#kontak" class="hover:text-[#19918F]">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-white z-40 transform translate-x-full transition-transform ease-in-out duration-300">
+            <div class="flex justify-center p-5">
+                <ul class="flex flex-col items-center space-y-6 text-xl text-[#19918F] font-medium">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ppdb.html">PPDB</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="index.html#kontak">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="blog">
+        <div class="w-full px-8 md:w-3/4 md:px-0 mx-auto my-28">
+            <h1 class="text-3xl font-semibold">📝 Blog</h1>
+            <p class="mt-8 text-gray-700">
+                Di Bogor Islamic Techno School, kami meyakini bahwa pendidikan bukan hanya tentang buku teks dan ruang kelas, tetapi juga tentang membekali siswa dengan keterampilan untuk berkembang di era digital—tanpa meninggalkan nilai-nilai Islam yang kuat.
+            </p>
+            <p class="mt-4 text-gray-700">
+                Sekolah kami berdiri di atas fondasi yang kokoh, mengintegrasikan pendidikan karakter Islami, teknologi mutakhir, dan kurikulum inovatif untuk membentuk pemimpin masa depan yang percaya diri, beretika, dan unggul dalam teknologi.
+            </p>
+    
+            <h2 class="text-2xl font-semibold mt-6">💡 What Makes Us Unique?</h2>
+            
+            <ul class="mt-8 space-y-4">
+                <li class="flex items-start">
+                    <span class="text-lg">📱</span>
+                    <p class="ml-3 text-gray-700">
+                        <strong>Pembelajaran Berbasis Teknologi</strong> Dari kelas digital interaktif hingga sesi coding langsung, siswa kami dibenamkan dalam dunia teknologi modern sejak usia dini. Kami memberdayakan mereka untuk tidak hanya menjadi pengguna teknologi, tetapi juga inovator dan kreator.
+                    </p>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-lg">📖</span>
+                    <p class="ml-3 text-gray-700">
+                        <strong>Nilai-Nilai Islam sebagai Inti</strong> Rutinitas harian kami dimulai dengan pembacaan Al-Qur'an, termasuk studi Islam yang membangun karakter, dan menekankan adab (tata krama), akhlak, dan kecintaan yang mendalam terhadap Islam. Kami tidak hanya memelihara pikiran yang cerdas tetapi juga hati yang murni.
+                    </p>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-lg">🌍</span>
+                    <p class="ml-3 text-gray-700">
+                        <strong>Pola Pikir Global, Kearifan Lokal</strong> Dengan kurikulum yang mendorong pemikiran kritis, kolaborasi, dan literasi digital, kami mempersiapkan siswa kami untuk menjadi kompeten secara global sambil tetap berakar pada nilai-nilai budaya Indonesia dan Islam yang kaya.
+                    </p>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-lg">🧠</span>
+                    <p class="ml-3 text-gray-700">
+                        <strong>Kurikulum Berorientasi Masa Depan</strong> Dari proyek STEAM (Sains, Teknologi, Teknik, Seni, dan Matematika) hingga kewirausahaan dan keterampilan digital, kami memberi siswa kami landasan akademis yang kuat yang relevan dengan masa depan.
+                    </p>
+                </li>
+            </ul>
+    
+            <h2 class="text-2xl font-semibold mt-8">🤝 Let’s Grow Together</h2>
+            <p class="mt-4 text-gray-700">
+                Di Bogor Islamic Techno School, kami tidak hanya mengajar — kami juga menginspirasi. Bergabunglah dengan kami dalam misi kami untuk membangun generasi Muslim yang siap memimpin dengan iman dan berinovasi dengan tujuan.
+            </p>
+            <p class="mt-4 text-gray-700">✨ Bersama-sama, mari kita membangun masa depan yang lebih cerah melalui iman dan teknologi.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

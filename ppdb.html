@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogor Islamic Techno School</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="font-family: inter;">
+    <nav class="w-full px-8 py-5 border-b border-[#E9EAEB]">
+        <div class="w-full md:w-3/4 mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <img src="assets/logo_bits.svg" alt="Logo BITS" class="h-10">
+
+            <!-- Hamburger Icon for Mobile -->
+            <button id="menu-toggle" class="md:hidden focus:outline-none z-50">
+                <!-- Bar Icon (Default) -->
+                <svg id="bar-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!-- Close Icon (Hidden by Default) -->
+                <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex md:space-x-6 text-[#717680]">
+                <li><a href="index.html" class="hover:text-[#19918F]">Home</a></li>
+                <li><a href="#ppdb" class="hover:text-[#19918F]">PPDB</a></li>
+                <li><a href="blog.html" class="hover:text-[#19918F]">Blog</a></li>
+                <li><a href="index.html#kontak" class="hover:text-[#19918F]">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-white z-40 transform translate-x-full transition-transform ease-in-out duration-300">
+            <div class="flex justify-center p-5">
+                <ul class="flex flex-col items-center space-y-6 text-xl text-[#19918F] font-medium">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#ppdb">PPDB</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html#kontak">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="ppdb">
+        <div class="w-full bg-gray-100 py-10 md:py-0">
+            <div
+                class="w-full px-8 md:px-0 md:w-3/4 mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center">
+                <div class="flex flex-col md:h-screen justify-center">
+                    <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold mt-5 text-[#414651]">Penerimaan Siswa Baru
+                    </h1>
+                    <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold mt-5 text-[#414651]">Tahun Ajaran</h1>
+                    <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold mt-5 text-[#414651]">2025 - 2026</h1>
+                    <h1 class="text-2xl xl:text-3xl mt-6 text-[#717680]">SMP - SMK Bogor Islamic Techno School</h1>
+                    <a href="#">
+                        <button
+                            class="px-8 py-3 rounded-xl mt-8 text-white bg-[#19918F] hover:bg-[#0F6C6B] transition-all">Daftar
+                            Sekarang</button>
+                    </a>
+                </div>
+                <div class="md:h-screen md:flex justify-center items-center">
+                    <!-- Flexbox untuk gambar berada di bawah -->
+                    <img src="assets/ppdb.svg" alt="PPDB">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
