@@ -9,11 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="assets/bits_logo2.svg">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         #scrollContainer {
             overflow: auto;
             scrollbar-width: none;
@@ -75,347 +79,69 @@
 
     <!-- Home Section -->
     <section id="home" class="relative">
-        <div class="w-full bg-gray-100">
+        <!-- Hero Section -->
+        <div class="w-full">
             <div
-                class="w-full px-8 md:px-0 md:w-3/4 h-screen md:h-auto mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center">
-                <div class="flex flex-col md:w-1/2 md:h-screen justify-center">
-                    <div class="flex flex-row items-center gap-5 md:gap-7">
-                        <h1 class="text-5xl md:text-7xl xl:text-8xl font-bold text-[#19918F]">PSB</h1>
-                        <img src="assets/comejoinnow.svg" alt="comejoinnow" class="h-12 lg:h-17 xl:h-20">
-                    </div>
-                    <h1 class="text-5xl md:text-7xl xl:text-8xl font-bold mt-5 text-[#414651]">2025 / 2026</h1>
-                    <h1 class="text-2xl xl:text-4xl font-medium mt-5 text-[#414651]">Bogor Islamic Tehcno School</h1>
-                    <a href="#">
+                class="w-full px-8 md:px-0 md:w-3/4 h-screen mx-auto flex flex-col md:flex-row justify-center items-center">
+                <div class="flex flex-col md:w-1/2 justify-center space-y-7">
+                    <h1 class="text-5xl md:text-7xl xl:text-8xl font-bold text-[#19918F]">Bogor Islamic Techno School
+                    </h1>
+                    <p class="text-[#676E82]">Sekolah berbasis IT adalah lembaga pendidikan yang mengintegrasikan teknologi dalam pembelajaran,
+                        manajemen, dan interaksi siswa, guru, serta orang tua. Tujuannya membekali siswa dengan
+                        keterampilan digital yang sesuai dengan perkembangan teknologi.e</p>
+                    <a href="https://s.id/PPDB_BITS_25_26">
                         <button
-                            class="px-8 py-3 rounded-xl mt-8 text-white bg-[#19918F] hover:bg-[#0F6C6B] transition-all">Daftar
+                            class="px-8 py-3 rounded-xl text-white bg-[#19918F] hover:bg-[#0F6C6B] transition-all">Daftar
                             Sekarang</button>
                     </a>
                 </div>
-                <div class="md:w-1/2 md:h-screen md:flex justify-center items-end hidden overflow-hidden">
+                <div class="w-full flex justify-center md:justify-end md:w-1/2">
                     <!-- Flexbox untuk gambar berada di bawah -->
-                    <img src="assets/img_hero.png" alt="Hero Illustration"
-                        class="max-w-[400px] md:max-w-[600px] lg:max-w-[800px]">
+                    <img src="assets/hero_illustration.svg" alt="Hero Illustration"
+                        class="w-full max-w-[400px] lg:max-w-[600px]">
                 </div>
             </div>
         </div>
-
-        <!-- Elemen Pojok Atas Kiri -->
-        <div class="absolute top-0 left-0 z-10">
-            <img src="assets/elemen1.svg" alt="Element Top Left" class="w-40 md:w-60">
-        </div>
-
-        <!-- Elemen Pojok Atas Kanan -->
-        <div class="absolute top-0 right-0 z-10">
-            <img src="assets/elemen2.svg" alt="Element Top Right" class="w-40 md:w-50">
-        </div>
-
-        <!-- Elemen Pojok Bawah -->
-        <div class="md:w-3/4 w-full px-8 md:px-0 mx-auto py-12">
-            <h2 class="text-3xl font-semibold text-center text-teal-600 mb-6">Apa Keunggulan Sekolah BITS?</h2>
-            <p class="text-center text-gray-700 mb-8">Bits School menyediakan pendidikan berbasis teknologi dengan
-                kurikulum yang fokus pada penguasaan keterampilan IT.</p>
-            <div class="grid md:grid-cols-3 gap-6 text-center">
-                <div class="p-6  rounded-lg">
-                    <img src="assets/satu.png" alt="School Icon" class="mx-auto mb-4  w-28">
-                    <h3 class="font-bold text-3xl text-teal-700">Sekolah IT Terbaik</h3>
-                    <p class="text-gray-600">Terbukti dengan lulusan kami yang di atas standar atau bisa dikatakan
-                        expert.</p>
-                </div>
-                <div class="p-6  rounded-lg">
-                    <img src="assets/dua.png" alt="Extracurricular Icon" class="mx-auto mb-4  w-28">
-                    <h3 class="font-bold text-3xl text-teal-700">Ekstrakurikuler Istimewa</h3>
-                    <p class="text-gray-600">Terbukti dengan lulusan kami yang di atas standar atau bisa dikatakan
-                        expert.</p>
-                </div>
-                <div class="p-6  rounded-lg">
-                    <img src="assets/tiga.png" alt="Teacher Icon" class="mx-auto mb-4  w-28">
-                    <h3 class="font-bold text-3xl text-teal-700">Tenaga Pengajar Profesional</h3>
-                    <p class="text-gray-600">Terbukti dengan lulusan kami yang di atas standar atau bisa dikatakan
-                        expert.</p>
-                </div>
-                <div class="p-6  rounded-lg">
-                    <img src="assets/empat.png" alt="Program Icon" class="mx-auto mb-4  w-28">
-                    <h3 class="font-bold text-3xl text-teal-700">Program Unggulan</h3>
-                    <p class="text-gray-600">Menumbuhkan soft skill maupun hard skill.</p>
-                </div>
-                <div class="p-6  rounded-lg">
-                    <img src="assets/lima.png" alt="Practice Icon" class="mx-auto mb-4  w-28">
-                    <h3 class="font-bold text-3xl text-teal-700">Full Praktek</h3>
-                    <p class="text-gray-600">Sekolah full praktek agar siap terjun di lapangan.</p>
-                </div>
-                <div class="p-6  rounded-lg">
-                    <img src="assets/enam.png" alt="Pesantren Icon" class="mx-auto mb-4  w-28">
-                    <h3 class="font-bold text-3xl text-teal-700">Pesantren Berbasis IT</h3>
-                    <p class="text-gray-600">Setiap hari ada kajian diniyyah dan halaqah tahfidz.</p>
-                </div>
-            </div>
-        </div>
-        <div class="mx-auto py-24 relative bg-teal-700 px-11 overflow-hidden">
-            <!-- Ornamen Bulatan -->
-            <div class="absolute w-80 h-80 bg-teal-500 rounded-full top-80 left-[-40px] opacity-50"></div>
-            <div class="absolute w-24 h-24 bg-teal-500 rounded-full top-20 right-32 opacity-50"></div>
-            <div class="absolute w-80 h-80 bg-teal-500 rounded-full top-[-30px] right-[-20px] opacity-50"></div>
-            <div class="absolute w-28 h-28 bg-teal-500 rounded-full bottom-10 left-20 opacity-50"></div>
-            <div class="absolute w-20 h-20 bg-teal-500 rounded-full top-10 left-1/2 opacity-50"></div>
-            <div class="absolute w-36 h-36 bg-teal-500 rounded-full bottom-20 right-1/4 opacity-50"></div>
-
-            <div class="md:w-3/4 w-full px-8 md:px-0 mx-auto">
-                <div class="grid md:grid-cols-3 gap-10 relative z-10">
-                    <div class="p-6 bg-white shadow-lg  rounded-lg text-left">
-                        <h3 class="font-bold text-2xl text-teal-700">Kuliah</h3>
-                        <p class="text-gray-600 mb-4">Mengajarkan teknologi untuk personal branding, networking, dan
-                            karier digital. Cocok bagi career coach, digital entrepreneur, dan content creator.</p>
-                        <img src="assets/kuliah.png" alt="Kuliah Icon" class="mx-auto  w-64 py-9">
+        <!-- Anda Sudah Pasti Bisa Kuliah, Kerja, Usaha -->
+         <div class="w-full bg-gray-50">
+            <div class="md:w-3/4 w-full px-8 md:px-0 mx-auto py-18">
+                <h2 class="text-3xl md:text-4xl font-semibold text-center text-[#19918F] mb-3">di BITS Anda sudah pasti bisa <br> KULIAH, KERJA, USAHA
+                </h2>
+                <div class="relative flex flex-col md:flex-row justify-between items-center gap-6 text-center mt-24">
+                    <!-- Garis Vertikal (hanya muncul di desktop) -->
+                    <div class="hidden md:block absolute left-1/3 -translate-x-1/2 border-l h-48 border-[#E9EAEB]"></div>
+                    <div class="hidden md:block absolute left-2/3 -translate-x-1/2 border-l h-48 border-[#E9EAEB]"></div>
+                
+                    <!-- Kolom 1 - Kuliah -->
+                    <div class="p-6 rounded-lg flex-1">
+                        <div class="w-20 h-20 flex justify-center items-center bg-[#B3E3E34D] rounded-full mx-auto mb-4">
+                            <img src="assets/uil_university.svg" alt="School Icon" class="w-10 h-10">
+                        </div>
+                        <h3 class="font-bold text-3xl text-[#19918F]">Kuliah</h3>
+                        <p class="text-[#676E82] mt-2">BITS adalah sekolah terkemuka yang menyediakan pendidikan berkualitas dan peluang untuk berkembang secara pribadi dan profesional</p>
                     </div>
-                    <div class="p-6 bg-white shadow-lg  rounded-lg text-left">
-                        <h3 class="font-bold text-2xl text-teal-700">Kerja</h3>
-                        <p class="text-gray-600 mb-4">Mempelajari manajemen tim dan proyek digital dengan tools
-                            kolaborasi, ideal untuk manajer proyek, remote leader, atau digital strategist.</p>
-                        <img src="assets/kerja.png" alt="Kerja Icon" class="mx-auto  w-64 py-9">
+                
+                    <!-- Kolom 2 - Kerja -->
+                    <div class="p-6 rounded-lg flex-1">
+                        <div class="w-20 h-20 flex justify-center items-center bg-[#B3E3E34D] rounded-full mx-auto mb-4">
+                            <img src="assets/work.svg" alt="Work Icon" class="w-10 h-10">
+                        </div>
+                        <h3 class="font-bold text-3xl text-[#19918F]">Kerja</h3>
+                        <p class="text-[#676E82] mt-2">Di BITS, pendidikan mempersiapkan Anda untuk dunia kerja dengan kurikulum praktis, fasilitas lengkap, dan dosen berkompeten.</p>
                     </div>
-                    <div class="p-6 bg-white shadow-lg  rounded-lg text-left">
-                        <h3 class="font-bold text-2xl text-teal-700">Usaha</h3>
-                        <p class="text-gray-600 mb-4 text-">Mengajarkan bisnis digital, pemasaran online, dan manajemen
-                            e-commerce, ideal bagi calon profesional di e-commerce atau startup digital.</p>
-                        <img src="assets/usaha.png" alt="Usaha Icon" class="mx-auto  w-64 py-9">
+                
+                    <!-- Kolom 3 - Usaha -->
+                    <div class="p-6 rounded-lg flex-1">
+                        <div class="w-20 h-20 flex justify-center items-center bg-[#B3E3E34D] rounded-full mx-auto mb-4">
+                            <img src="assets/usaha.svg" alt="Business Icon" class="w-10 h-10">
+                        </div>
+                        <h3 class="font-bold text-3xl text-[#19918F]">Usaha</h3>
+                        <p class="text-[#676E82] mt-2">Di BITS, siswa mendapatkan pengetahuan akademis, keterampilan kewirausahaan, serta dukungan fasilitas, program, dan jaringan profesional.</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="py-20">
-            <div class="md:w-3/4 px-8 w-full md:px-0 mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-teal-700">Program Studi SMP & SMK</h2>
-                <p class="mt-4 text-gray-600 max-w-6xl mx-auto">
-                    Bits School menyediakan pendidikan berbasis teknologi dengan kurikulum yang berfokus pada penguasaan
-                    keterampilan IT.
-                    Mahasiswa dibekali dengan pemrograman, kecerdasan buatan, keamanan siber, dan pengembangan perangkat
-                    lunak
-                    melalui metode pembelajaran praktis dan proyek nyata. Dengan dukungan tenaga pengajar ahli dan
-                    fasilitas modern, Bits
-                    School memastikan lulusannya siap bersaing di era digital.
-                </p>
-            </div>
-            <div class="mt-8 md:w-3/4 px-8 w-full md:px-0 mx-auto grid gap-6 md:grid-cols-1 lg:grid-cols-1">
-                <!-- Program SMP -->
-                <div class="bg-white rounded-lg p-6 mt-10 border border-gray-200" data-aos="fade-up">
-                    <div class="bg-teal-700 text-white text-center py-3 rounded-lg font-semibold text-lg">Program SMP
-                    </div>
-                    <div class="p-6 flex flex-col md:flex-row items-start">
-                        <div class="w-full md:w-1/2 pr-4 md:border-r pb-5 border-r-0  border-gray-300">
-                            <p class="font-semibold">Contoh Pembelajaran :</p>
-                            <ul class="list-disc mt-2 pl-5 text-gray-700 space-y-1">
-                                <li>Belajar membuat <span class="text-teal-600">Game Edukasi</span></li>
-                                <li>Belajar membuat <span class="text-teal-600">Game dengan Build Box</span></li>
-                                <li>Belajar membuat <span class="text-teal-600">Web</span></li>
-                                <li>Belajar <span class="text-teal-600">Robotic</span></li>
-                            </ul>
-                        </div>
-                        <div class="w-full md:w-1/2 md:pl-4 pl-0 mt-5 md:mt-0">
-                            <ul class="space-y-2 text-gray-700">
-                                <li class="flex items-center"><span class="text-white mr-2">
-                                        <div
-                                            class="w-5 h-5 flex items-center justify-center text-xs rounded-full bg-teal-600">
-                                            ✓</div>
-                                    </span> Membuat game edukasi</li>
-                                <li class="flex items-center"><span class="text-white mr-2">
-                                        <div
-                                            class="w-5 h-5 flex items-center justify-center text-xs rounded-full bg-teal-600">
-                                            ✓</div>
-                                    </span> Membuat website</li>
-                                <li class="flex items-center"><span class="text-white mr-2">
-                                        <div
-                                            class="w-5 h-5 flex items-center justify-center text-xs rounded-full bg-teal-600">
-                                            ✓</div>
-                                    </span> Membuat desain grafis</li>
-                                <li class="flex items-center"><span class="text-white mr-2">
-                                        <div
-                                            class="w-5 h-5 flex items-center justify-center text-xs rounded-full bg-teal-600">
-                                            ✓</div>
-                                    </span> IOT dan Robotic</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg p-6 mt-10 border border-gray-200" data-aos="fade-up">
-                    <div class="bg-teal-700 text-white text-center py-3 rounded-lg font-semibold text-lg">Program SMK
-                        Designer</div>
-                    <div class="p-6 flex flex-col md:flex-row items-start">
-                        <div class="w-full md:w-1/2 pr-4 border-r-0 pb-5 md:border-r border-gray-300">
-                            <p class="font-semibold">Contoh Pembelajaran :</p>
-                            <ul class="list-disc mt-2 pl-5 text-gray-700 space-y-1">
-                                <li>Membuat <span class="text-teal-600">Aplikasi Mobile dengan Figma</span></li>
-                                <li>Membuat <span class="text-teal-600">Aplikasi Web dengan Figma</span></li>
-
-                            </ul>
-                        </div>
-                        <div class="w-full md:w-1/2 md:pl-4 pl-0 mt-5 md:mt-0">
-                            <ul class="space-y-2 text-gray-700">
-                                <li class="flex items-center"><span class="text-white mr-2">
-                                        <div
-                                            class="w-5 h-5 flex items-center justify-center text-xs rounded-full bg-teal-600">
-                                            ✓</div>
-                                    </span> Program 3 tahun (2 tahun belajar + 1 tahun PKL)</li>
-                                <li class="flex items-center"><span class="text-white mr-2">
-                                        <div
-                                            class="w-5 h-5 flex items-center justify-center text-xs rounded-full bg-teal-600">
-                                            ✓</div>
-                                    </span> Mempelajari UI/UX Design</li>
-                                <li class="flex items-center"><span class="text-white mr-2">
-                                        <div
-                                            class="w-5 h-5 flex items-center justify-center text-xs rounded-full bg-teal-600">
-                                            ✓</div>
-                                    </span> Mempelajari Desain Grafis</li>
-                                <li class="flex items-center"><span class="text-white mr-2">
-                                        <div
-                                            class="w-5 h-5 flex items-center justify-center text-xs rounded-full bg-teal-600">
-                                            ✓</div>
-                                    </span>Mempelajari Multimedia</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white  rounded-lg p-6 mt-10 border border-gray-200" data-aos="fade-up">
-                    <div class="bg-teal-700 text-white text-center py-3 rounded-lg font-semibold text-lg">Program SMK
-                        Programmer </div>
-                    <div class="p-6 flex flex-col md:flex-row items-start">
-                        <div class="w-full md:w-1/2 pr-4 border-r-0 pb-5 md:border-r border-gray-300">
-                            <p class="font-semibold">Contoh Pembelajaran :</p>
-                            <ul class="list-disc mt-2 pl-5 text-gray-700 space-y-1">
-                                <li>Belajar <span class="text-teal-600"> HTML dasar</span></li>
-                                <li>Belajar<span class="text-teal-600"> CSS dasar</span></li>
-                                <li>Belajar<span class="text-teal-600"> Membuat web dengan HTML CSS</span></li>
-
-                            </ul>
-                        </div>
-                        <div class="w-full md:w-1/2 md:pl-4 pl-0 mt-5 md:mt-0">
-                            <ul class="space-y-2 text-gray-700">
-                                <li class="flex items-center"><span class="text-white mr-2">
-                                        <div
-                                            class="w-5 h-5 flex items-center justify-center text-xs rounded-full bg-teal-600">
-                                            ✓</div>
-                                    </span>Program 3 tahun (2 tahun belajar + 1 tahun PKL)</li>
-                                <li class="flex items-center"><span class="text-white mr-2">
-                                        <div
-                                            class="w-5 h-5 flex items-center justify-center text-xs rounded-full bg-teal-600">
-                                            ✓</div>
-                                    </span>Membuat aplikasi berbasis web</li>
-                                <li class="flex items-center"><span class="text-white mr-2">
-                                        <div
-                                            class="w-5 h-5 flex items-center justify-center text-xs rounded-full bg-teal-600">
-                                            ✓</div>
-                                    </span> Membuat aplikasi mobile (Android)</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg p-6 mt-10 border border-gray-200" data-aos="fade-up">
-                    <div class="bg-teal-700 text-white text-center py-3 rounded-lg font-semibold text-lg">Program SMK
-                        Network Engineer </div>
-                    <div class="p-6 flex flex-col md:flex-row items-start">
-                        <div class="w-full md:w-1/2 pr-4 border-r-0  md:border-r border-gray-300">
-                            <p class="font-semibold">Contoh Pembelajaran :</p>
-                            <ul class="list-disc mt-2 pl-5 text-gray-700 space-y-1">
-                                <li>Belajar <span class="text-teal-600"> Cisco</span></li>
-                                <li>Belajar<span class="text-teal-600"> Mikrotik</span></li>
-                                <li>Belajar<span class="text-teal-600"> Linux Server</span></li>
-
-                            </ul>
-                        </div>
-                        <div class="w-full md:w-1/2 md:pl-4 pl-0 mt-5 md:mt-0">
-                            <ul class="space-y-2 text-gray-700">
-                                <li class="flex items-center"><span class="text-white mr-2">
-                                        <div
-                                            class="w-5 h-5 flex items-center justify-center text-xs rounded-full bg-teal-600">
-                                            ✓</div>
-                                    </span>Program 3 tahun (2 tahun belajar + 1 tahun PKL)</li>
-                                <li class="flex items-center"><span class="text-white mr-2">
-                                        <div
-                                            class="w-5 h-5 flex items-center justify-center text-xs rounded-full bg-teal-600">
-                                            ✓</div>
-                                    </span>Mempelajari jaringan komputer (Cisco dan Mikrotik)</li>
-                                <li class="flex items-center"><span class="text-white mr-2">
-                                        <div
-                                            class="w-5 h-5 flex items-center justify-center text-xs rounded-full bg-teal-600">
-                                            ✓</div>
-                                    </span> Mempelajari Cloud Server</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-teal-700 mb-80 py-16 h-[400px] relative">
-            <div class="w-full px-8 md:w-3/4 md:px-0 mx-auto text-white items-center justify-center text-center">
-                <p class="md:text-xl text-lg font-normal">Testimoni</p>
-                <p class="md:text-5xl text-3xl  mt-2 font-semibold">SMP & SMK Bogor Islamic <br> Techno School</p>
-                <div
-                    class="w-[500px]  h-[500px] bg-white opacity-30 rounded-full absolute bottom-[-300px] left- transform -translate-x-1/2 -translate-y-1/2">
-                </div>
-
-                <div class="div flex items-center justify-center w-full mt-10">
-                    <div id="scrollContainer"
-                        class="w-[90%] max-w-full flex overflow-x-auto h-96 items-center justify-start   space-x-16 p-4">
-                        <div
-                            class="min-w-[380px]   max-w-[380px] z-10 h-80 bg-white text-black p-4 rounded-2xl shadow-lg flex flex-col items-center justify-center">
-                            <div class="w-[95%] h-[75%] ">
-                                <p class="text-grey-800 text-gray-500 text-[15.5px] text-left">Saya melihat perkembangan
-                                    yang luar biasa pada anak saya sejak bersekolah di lingkungan berbasis IT. Ia
-                                    menjadi lebih mandiri dalam belajar dan lebih siap menghadapi dunia digital. Selain
-                                    itu, sistem e-learning juga memudahkan kami sebagai orang tua untuk memantau
-                                    perkembangan akademiknya.</p>
-                            </div>
-                            <div class="w-[95%]  h-[25%] flex items-center  ">
-                                <img class="w-14 h-14 rounded-full" src="assets/sumarti.png" alt="">
-                                <div class="ml-2">
-                                    <p class=" text-left font-semibold text-lg">Ibu Sumarti</p>
-                                    <p class="text-sm text-left text-gray-400">Wali Murid</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="min-w-[380px] max-w-[380px] z-10 h-80 bg-white text-black p-4 rounded-2xl shadow-lg flex flex-col items-center justify-center">
-                            <div class="w-[95%] h-[75%] ">
-                                <p class="text-grey-800 text-gray-500 text-[15.5px] text-left">Mengajar di sekolah
-                                    berbasis IT sangat membantu dalam menyampaikan materi dengan lebih interaktif.
-                                    Dengan adanya Learning Management System (LMS), saya bisa memberikan tugas dan kuis
-                                    secara online serta melihat kemajuan belajar siswa secara real-time. Teknologi
-                                    benar-benar meningkatkan efektivitas pembelajaran.</p>
-                            </div>
-                            <div class="w-[95%]  h-[25%] flex items-center  ">
-                                <img class="w-14 h-14 rounded-full" src="assets/andi.png" alt="">
-                                <div class="ml-2">
-                                    <p class=" text-left font-semibold text-lg">Andi Mulyono, S.P.d</p>
-                                    <p class="text-sm text-left text-gray-400">Direktur</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="min-w-[380px] max-w-[380px] z-10 h-80 bg-white text-black p-4 rounded-2xl shadow-lg flex flex-col items-center justify-center">
-                            <div class="w-[95%] h-[75%] ">
-                                <p class="text-grey-800 text-gray-500 text-[15.5px] text-left">Saya merasa sangat siap
-                                    untuk memasuki dunia kerja setelah lulus dari sekolah berbasis IT. Sejak dini, kami
-                                    sudah dibekali keterampilan digital seperti pemrograman, analisis data, dan keamanan
-                                    siber. Hal ini memberi saya keunggulan dibanding lulusan dari sekolah lain.</p>
-                            </div>
-                            <div class="w-[95%]  h-[25%] flex items-center  ">
-                                <img class="w-14 h-14 rounded-full" src="assets/bagas.png" alt="">
-                                <div class="ml-2">
-                                    <p class=" text-left font-semibold text-lg">Bagas Umar</p>
-                                    <p class="text-sm text-left text-gray-400">Alumni</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex justify-center space-x-2 mb-40">
-            <div id="indicator1" class="w-4 h-4 bg-teal-600 delay-75 duration-300 animate-bounce rounded-full"></div>
-            <div id="indicator2" class="w-4 h-4 bg-gray-300 animate-bounce  rounded-full"></div>
-            <div id="indicator3" class="w-4 h-4 bg-teal-600 animate-bounce rounded-full"></div>
-        </div>
-        <div class="bg-teal-700 mb-20 py-16 h-auto text-white items-center justify-center text-center relative">
+         </div>
+        <div class="bg-[#19918F] mb-20 py-16 h-auto text-white items-center justify-center text-center relative">
             <div class="w-full px-8 md:w-3/4 md:px-0 mx-auto">
                 <p class="md:text-xl text-lg font-normal">Alumni</p>
                 <p class="md:text-5xl text-3xl  mt-2 font-semibold">SMP & SMK Bogor Islamic <br> Techno School</p>
@@ -481,9 +207,9 @@
             </div>
         </div>
         <div class="flex justify-center  space-x-2 mb-40">
-            <div id="indicator1" class="w-4 h-4 bg-teal-600 delay-75 duration-300 animate-bounce rounded-full"></div>
+            <div id="indicator1" class="w-4 h-4 bg-[#19918F] delay-75 duration-300 animate-bounce rounded-full"></div>
             <div id="indicator2" class="w-4 h-4 bg-gray-300 animate-bounce  rounded-full"></div>
-            <div id="indicator3" class="w-4 h-4 bg-teal-600 animate-bounce rounded-full"></div>
+            <div id="indicator3" class="w-4 h-4 bg-[#19918F] animate-bounce rounded-full"></div>
         </div>
     </section>
     <section id="kontak">
@@ -491,7 +217,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <!-- Denah Lokasi -->
                 <div>
-                    <h2 class="text-2xl font-semibold text-teal-700 mb-4">Denah Lokasi</h2>
+                    <h2 class="text-2xl font-semibold text-[#19918F] mb-4">Denah Lokasi</h2>
                     <div class="w-full h-72 md:h-11/12 bg-gray-200 rounded-xl flex items-center justify-center">
                         <span class="text-gray-500">[Denah Lokasi]</span>
                     </div>
@@ -499,7 +225,7 @@
 
                 <!-- Kotak Saran -->
                 <div>
-                    <h2 class="text-2xl font-semibold text-teal-700 mb-4">Kotak Saran</h2>
+                    <h2 class="text-2xl font-semibold text-[#19918F] mb-4">Kotak Saran</h2>
                     <form>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <input type="text" placeholder="Nama Kamu"
@@ -513,7 +239,7 @@
                         </div>
                         <textarea placeholder="Your Message"
                             class="w-full p-3 border border-[#D5D7DA] rounded-xl mt-4 focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
-                        <button class="mt-4 bg-teal-600 text-white px-6 py-2.5 rounded-xl hover:bg-teal-700">Kirim
+                        <button class="mt-4 bg-[#19918F] text-white px-6 py-2.5 rounded-xl hover:bg-[#19918F]">Kirim
                             Pesan</button>
                     </form>
 
@@ -545,7 +271,7 @@
                             </span>
                             <div class="flex flex-col">
                                 <p class="text-sm text-[#717680]">Alamat</p>
-                                <p class="text-black font-semibold">Lorem Ipsum sdcsdcs wcbiwcj</p>
+                                <p class="text-black font-semibold">Cilember, Cisarua, Bogor</p>
                             </div>
                         </div>
                         <div class="flex items-center space-x-3">
@@ -559,7 +285,7 @@
                             </span>
                             <div class="flex flex-col">
                                 <p class="text-sm text-[#717680]">WhatsApp</p>
-                                <p class="text-black font-semibold">+620888888</p>
+                                <p class="text-black font-semibold">+6281220049451</p>
                             </div>
                         </div>
                     </div>
@@ -568,7 +294,7 @@
             </div>
         </div>
     </section>
-    <footer class="bg-teal-700 text-white py-16 px-6 mt-32 relative">
+    <footer class="bg-[#19918F] text-white py-16 px-6 mt-32 relative">
         <!-- Elemen Pojok Kiri Atas -->
         <div class="absolute top-0 left-0 z-10">
             <img src="assets/vector1.svg" alt="Element Top Left" class="w-40 md:w-60">
@@ -602,20 +328,41 @@
                 <h3 class="font-semibold text-lg">Bergabung Bersama Kami</h3>
                 <div class="mt-4">
                     <h3 class="font-bold text-lg">Keluarga Kami</h3>
-                    <p class="mt-1">SMP Bogor Islamic Techno School</p>
-                    <p class="text-sm">SMK Bogor Islamic Techno School</p>
+                    <p class="mt-2">SMP Bogor Islamic Techno School</p>
+                    <p class="mt-1">SMK Bogor Islamic Techno School</p>
                 </div>
             </div>
 
             <!-- Kantor Kami & Tombol -->
             <div class="mb-8 md:mb-0">
-                <button
-                    class="bg-white hover:bg-[#D8F5F5] transition-all text-teal-700 font-medium py-2 px-4 rounded-lg">
-                    Gabung Sekarang
-                </button>
+                <a href="https://api.whatsapp.com/send/?phone=%2B6281220049451&text&type=phone_number&app_absent=0">
+                    <button
+                        class="bg-white hover:bg-[#D8F5F5] transition-all text-[#19918F] font-medium py-2 px-4 rounded-lg">
+                        Hubungi Kami
+                    </button>
+                </a>
                 <div class="mt-4">
                     <h3 class="font-bold text-lg">Kantor Kami</h3>
                     <p class="mt-1">Cilember, Puncak, Bogor</p>
+                </div>
+                <div class="mt-4 space-y-2">
+                    <h3 class="font-bold text-lg">Kontak Kami</h3>
+                    <div class="flex items-center gap-2">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20C8.23277 20.003 6.4966 19.5353 4.97002 18.645L0.00401546 20L1.35602 15.032C0.464974 13.5049 -0.00308163 11.768 1.52687e-05 10C1.52687e-05 4.477 4.47702 0 10 0ZM6.59202 5.3L6.39201 5.308C6.26271 5.31691 6.13636 5.35087 6.02002 5.408C5.91159 5.46951 5.81258 5.5463 5.72602 5.636C5.60602 5.749 5.53802 5.847 5.46502 5.942C5.09514 6.4229 4.89599 7.01331 4.89902 7.62C4.90102 8.11 5.02902 8.587 5.22902 9.033C5.63802 9.935 6.31102 10.89 7.19902 11.775C7.41302 11.988 7.62302 12.202 7.84902 12.401C8.95245 13.3724 10.2673 14.073 11.689 14.447L12.257 14.534C12.442 14.544 12.627 14.53 12.813 14.521C13.1042 14.5056 13.3885 14.4268 13.646 14.29C13.7769 14.2223 13.9047 14.1489 14.029 14.07C14.029 14.07 14.0713 14.0413 14.154 13.98C14.289 13.88 14.372 13.809 14.484 13.692C14.568 13.6053 14.638 13.5047 14.694 13.39C14.772 13.227 14.85 12.916 14.882 12.657C14.906 12.459 14.899 12.351 14.896 12.284C14.892 12.177 14.803 12.066 14.706 12.019L14.124 11.758C14.124 11.758 13.254 11.379 12.722 11.137C12.6663 11.1128 12.6067 11.0989 12.546 11.096C12.4776 11.0888 12.4084 11.0965 12.3432 11.1184C12.278 11.1403 12.2182 11.176 12.168 11.223C12.163 11.221 12.096 11.278 11.373 12.154C11.3315 12.2098 11.2744 12.2519 11.2088 12.2751C11.1433 12.2982 11.0723 12.3013 11.005 12.284C10.9398 12.2666 10.876 12.2446 10.814 12.218C10.69 12.166 10.647 12.146 10.562 12.11C9.98789 11.8599 9.45646 11.5215 8.98702 11.107C8.86102 10.997 8.74402 10.877 8.62402 10.761C8.23063 10.3842 7.88777 9.95799 7.60401 9.493L7.54501 9.398C7.50328 9.3338 7.46905 9.26501 7.44302 9.193C7.40502 9.046 7.50402 8.928 7.50402 8.928C7.50402 8.928 7.74702 8.662 7.86002 8.518C7.97002 8.378 8.06302 8.242 8.12302 8.145C8.24102 7.955 8.27802 7.76 8.21602 7.609C7.93602 6.925 7.64668 6.24467 7.34802 5.568C7.28902 5.434 7.11402 5.338 6.95502 5.319C6.90102 5.31233 6.84702 5.307 6.79302 5.303C6.65874 5.2953 6.52411 5.29663 6.39002 5.307L6.59202 5.3Z"
+                                fill="white" />
+                        </svg>
+                        <p class="mt-1">+6281220049451</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20C8.23277 20.003 6.4966 19.5353 4.97002 18.645L0.00401546 20L1.35602 15.032C0.464974 13.5049 -0.00308163 11.768 1.52687e-05 10C1.52687e-05 4.477 4.47702 0 10 0ZM6.59202 5.3L6.39201 5.308C6.26271 5.31691 6.13636 5.35087 6.02002 5.408C5.91159 5.46951 5.81258 5.5463 5.72602 5.636C5.60602 5.749 5.53802 5.847 5.46502 5.942C5.09514 6.4229 4.89599 7.01331 4.89902 7.62C4.90102 8.11 5.02902 8.587 5.22902 9.033C5.63802 9.935 6.31102 10.89 7.19902 11.775C7.41302 11.988 7.62302 12.202 7.84902 12.401C8.95245 13.3724 10.2673 14.073 11.689 14.447L12.257 14.534C12.442 14.544 12.627 14.53 12.813 14.521C13.1042 14.5056 13.3885 14.4268 13.646 14.29C13.7769 14.2223 13.9047 14.1489 14.029 14.07C14.029 14.07 14.0713 14.0413 14.154 13.98C14.289 13.88 14.372 13.809 14.484 13.692C14.568 13.6053 14.638 13.5047 14.694 13.39C14.772 13.227 14.85 12.916 14.882 12.657C14.906 12.459 14.899 12.351 14.896 12.284C14.892 12.177 14.803 12.066 14.706 12.019L14.124 11.758C14.124 11.758 13.254 11.379 12.722 11.137C12.6663 11.1128 12.6067 11.0989 12.546 11.096C12.4776 11.0888 12.4084 11.0965 12.3432 11.1184C12.278 11.1403 12.2182 11.176 12.168 11.223C12.163 11.221 12.096 11.278 11.373 12.154C11.3315 12.2098 11.2744 12.2519 11.2088 12.2751C11.1433 12.2982 11.0723 12.3013 11.005 12.284C10.9398 12.2666 10.876 12.2446 10.814 12.218C10.69 12.166 10.647 12.146 10.562 12.11C9.98789 11.8599 9.45646 11.5215 8.98702 11.107C8.86102 10.997 8.74402 10.877 8.62402 10.761C8.23063 10.3842 7.88777 9.95799 7.60401 9.493L7.54501 9.398C7.50328 9.3338 7.46905 9.26501 7.44302 9.193C7.40502 9.046 7.50402 8.928 7.50402 8.928C7.50402 8.928 7.74702 8.662 7.86002 8.518C7.97002 8.378 8.06302 8.242 8.12302 8.145C8.24102 7.955 8.27802 7.76 8.21602 7.609C7.93602 6.925 7.64668 6.24467 7.34802 5.568C7.28902 5.434 7.11402 5.338 6.95502 5.319C6.90102 5.31233 6.84702 5.307 6.79302 5.303C6.65874 5.2953 6.52411 5.29663 6.39002 5.307L6.59202 5.3Z"
+                                fill="white" />
+                        </svg>
+                        <p class="mt-1">+628159966500</p>
+                    </div>
                 </div>
             </div>
         </div>
