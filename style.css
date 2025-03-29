@@ -1,0 +1,52 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#scrollContainer {
+    overflow: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+}
+
+#scrollContainer::-webkit-scrollbar {
+    display: none;
+    /* WebKit */
+}
+@keyframes scrollRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollLeft {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+.animate-scroll-right {
+    animation: scrollRight 30s linear infinite;
+}
+
+.animate-scroll-left {
+    animation: scrollLeft 30s linear infinite;
+}
+
+.testimonial-container {
+    display: flex;
+    width: max-content;
+}
+
+.testimonial-group {
+    display: flex;
+}
+
+.testimonial-item {
+    flex: 0 0 auto;
+    margin-right: 2rem;
+}
+
+/* Pause animation on hover */
+.testimonial-scroll:hover .testimonial-container {
+    animation-play-state: paused;
+}

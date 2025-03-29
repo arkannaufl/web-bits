@@ -13,24 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="assets/bits_logo2.svg">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        #scrollContainer {
-            overflow: auto;
-            scrollbar-width: none;
-            /* Firefox */
-            -ms-overflow-style: none;
-            /* IE/Edge */
-        }
-
-        #scrollContainer::-webkit-scrollbar {
-            display: none;
-            /* WebKit */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body style="font-family: inter;">
@@ -78,39 +61,36 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home" class="relative">
+    <section id="home">
         <!-- Hero Section -->
-        <div class="w-full">
-            <div
-                class="w-full px-8 md:px-0 md:w-3/4 h-screen mx-auto flex flex-col md:flex-row justify-center items-center">
+            <div class="w-full px-8 md:px-0 md:w-3/4 h-screen mx-auto flex flex-col md:flex-row justify-center items-center">
                 <div class="flex flex-col md:w-1/2 justify-center space-y-7">
-                    <h1 class="text-5xl md:text-7xl xl:text-8xl font-bold text-[#19918F]">Bogor Islamic Techno School
+                    <h1 class="text-5xl md:text-7xl 2xl:text-8xl font-bold text-[#19918F]">Bogor Islamic Techno School
                     </h1>
                     <p class="text-[#676E82]">Sekolah berbasis IT adalah lembaga pendidikan yang mengintegrasikan teknologi dalam pembelajaran,
                         manajemen, dan interaksi siswa, guru, serta orang tua. Tujuannya membekali siswa dengan
-                        keterampilan digital yang sesuai dengan perkembangan teknologi.e</p>
+                        keterampilan digital yang sesuai dengan perkembangan teknologi.</p>
                     <a href="https://s.id/PPDB_BITS_25_26">
                         <button
                             class="px-8 py-3 rounded-xl text-white bg-[#19918F] hover:bg-[#0F6C6B] transition-all">Daftar
                             Sekarang</button>
                     </a>
                 </div>
-                <div class="w-full flex justify-center md:justify-end md:w-1/2">
+                <div class="w-full flex justify-center md:justify-end md:w-1/2 mt-20 md:mt-0">
                     <!-- Flexbox untuk gambar berada di bawah -->
                     <img src="assets/hero_illustration.svg" alt="Hero Illustration"
                         class="w-full max-w-[400px] lg:max-w-[600px]">
                 </div>
             </div>
-        </div>
         <!-- Anda Sudah Pasti Bisa Kuliah, Kerja, Usaha -->
-         <div class="w-full bg-gray-50">
+         <div class="w-full bg-gray-100">
             <div class="md:w-3/4 w-full px-8 md:px-0 mx-auto py-18">
-                <h2 class="text-3xl md:text-4xl font-semibold text-center text-[#19918F] mb-3">di BITS Anda sudah pasti bisa <br> KULIAH, KERJA, USAHA
+                <h2 class="text-3xl md:text-4xl font-semibold text-center text-[#19918F] mb-3">Di BITS Anda akan bisa <br> KULIAH, KERJA, USAHA
                 </h2>
                 <div class="relative flex flex-col md:flex-row justify-between items-center gap-6 text-center mt-24">
                     <!-- Garis Vertikal (hanya muncul di desktop) -->
-                    <div class="hidden md:block absolute left-1/3 -translate-x-1/2 border-l h-48 border-[#E9EAEB]"></div>
-                    <div class="hidden md:block absolute left-2/3 -translate-x-1/2 border-l h-48 border-[#E9EAEB]"></div>
+                    <div class="hidden md:block absolute left-1/3 -translate-x-1/2 border-l h-48 border-gray-200"></div>
+                    <div class="hidden md:block absolute left-2/3 -translate-x-1/2 border-l h-48 border-gray-200"></div>
                 
                     <!-- Kolom 1 - Kuliah -->
                     <div class="p-6 rounded-lg flex-1">
@@ -118,7 +98,7 @@
                             <img src="assets/uil_university.svg" alt="School Icon" class="w-10 h-10">
                         </div>
                         <h3 class="font-bold text-3xl text-[#19918F]">Kuliah</h3>
-                        <p class="text-[#676E82] mt-2">BITS adalah sekolah terkemuka yang menyediakan pendidikan berkualitas dan peluang untuk berkembang secara pribadi dan profesional</p>
+                        <p class="text-[#676E82] mt-2">Melalui BITS, anda mendapatkan jaminan 100% pasti bisa kuliah setelah lulus.</p>
                     </div>
                 
                     <!-- Kolom 2 - Kerja -->
@@ -127,7 +107,7 @@
                             <img src="assets/work.svg" alt="Work Icon" class="w-10 h-10">
                         </div>
                         <h3 class="font-bold text-3xl text-[#19918F]">Kerja</h3>
-                        <p class="text-[#676E82] mt-2">Di BITS, pendidikan mempersiapkan Anda untuk dunia kerja dengan kurikulum praktis, fasilitas lengkap, dan dosen berkompeten.</p>
+                        <p class="text-[#676E82] mt-2">Melalui BITS, anda mendapatkan jaminan 100% pasti menadaptkan kerja setelah lulus bahkan mendapatkan penghasilan dimasa belajar/PKL.</p>
                     </div>
                 
                     <!-- Kolom 3 - Usaha -->
@@ -136,84 +116,370 @@
                             <img src="assets/usaha.svg" alt="Business Icon" class="w-10 h-10">
                         </div>
                         <h3 class="font-bold text-3xl text-[#19918F]">Usaha</h3>
-                        <p class="text-[#676E82] mt-2">Di BITS, siswa mendapatkan pengetahuan akademis, keterampilan kewirausahaan, serta dukungan fasilitas, program, dan jaringan profesional.</p>
+                        <p class="text-[#676E82] mt-2">Melalui BITS, anda mendapatkan dukungan dan support sistem untuk mempunyai usaha atau company setelah lulus SMK BITS.</p>
                     </div>
                 </div>
             </div>
          </div>
-        <div class="bg-[#19918F] mb-20 py-16 h-auto text-white items-center justify-center text-center relative">
-            <div class="w-full px-8 md:w-3/4 md:px-0 mx-auto">
-                <p class="md:text-xl text-lg font-normal">Alumni</p>
-                <p class="md:text-5xl text-3xl  mt-2 font-semibold">SMP & SMK Bogor Islamic <br> Techno School</p>
-                <div
-                    class="w-[500px]  h-[500px] bg-white opacity-30 rounded-full absolute bottom-0 left- transform -translate-x-1/2 -translate-y-1/2">
+         <!-- Apa Keungulan Sekolah BITS? -->
+            <div class="md:w-3/4 w-full px-8 md:px-0 mx-auto py-18">
+                <h2 class="text-3xl md:text-4xl font-semibold text-center text-[#19918F] mb-3">Apa Keunggulan Sekolah Bits?</h2>
+                <p class="text-[#717680] text-center max-w-6xl mx-auto">Bits School membekali siswa dengan keterampilan desain komunikasi visual, teknik komputer jaringan, dan pengembangan perangkat lunak. Dengan metode pembelajaran praktis, proyek nyata, serta dukungan tenaga ahli dan fasilitas modern, lulusan siap bersaing di dunia digital.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-7 mt-16">
+                    <!-- Item 1 -->
+                    <div class="group flex flex-col items-start p-5 md:p-7 bg-white border border-[#E9EAEB] hover:border-none hover:bg-[#19918F] rounded-2xl transition-all duration-300 relative">
+                        <div class="mb-4 bg-[#B3E3E34D] w-10 h-10 aspect-square group-hover:bg-white p-2.5 rounded-full transition-all duration-300">
+                            <img src="assets/sekolah.svg" alt="Icon 1">
+                        </div>
+                        <div class="space-y-2 text-start">
+                            <h3 class="font-semibold text-[#19918F] group-hover:text-white text-xl md:text-2xl transition-all duration-300">
+                                Sekolah IT Terbaik
+                            </h3>
+                            <p class="text-[#717680] group-hover:text-white transition-all duration-300">
+                                Pendidikan berbasis teknologi dengan kurikulum modern untuk mencetak ahli IT
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Item 2 -->
+                    <div class="group flex flex-col items-start p-5 md:p-7 bg-white border border-[#E9EAEB] hover:border-none hover:bg-[#19918F] rounded-2xl transition-all duration-300">
+                        <div class="mb-4 bg-[#B3E3E34D] w-10 h-10 aspect-square group-hover:bg-white p-3 rounded-full transition-all duration-300">
+                            <img src="assets/icon_2.svg" alt="Icon 2">
+                        </div>
+                        <div class="space-y-2 text-start">
+                            <h3 class="font-semibold text-[#19918F] group-hover:text-white text-xl md:text-2xl transition-all duration-300">
+                                Pesantren Berbasis IT
+                            </h3>
+                            <p class="text-[#717680] group-hover:text-white transition-all duration-300">
+                                Mengintegrasikan teknologi dalam pembelajaran Islam
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Item 3 -->
+                    <div class="group flex flex-col items-start p-5 md:p-7 bg-white border border-[#E9EAEB] hover:border-none hover:bg-[#19918F] rounded-2xl transition-all duration-300 relative">
+                        <div class="mb-4 bg-[#B3E3E34D] w-10 h-10 aspect-square group-hover:bg-white p-2.5 rounded-full transition-all duration-300">
+                            <img src="assets/guru.svg" alt="Icon 3">
+                        </div>
+                        <div class="space-y-2 text-start">
+                            <h3 class="font-semibold text-[#19918F] group-hover:text-white text-xl md:text-2xl transition-all duration-300">
+                                Pengajar Profesional
+                            </h3>
+                            <p class="text-[#717680] group-hover:text-white transition-all duration-300">
+                                Pengajar berpengalaman dengan metode inovatif untuk perkembangan siswa
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Item 4 -->
+                    <div class="group flex flex-col items-start p-5 md:p-7 bg-white border border-[#E9EAEB] hover:border-none hover:bg-[#19918F] rounded-2xl transition-all duration-300">
+                        <div class="mb-4 bg-[#B3E3E34D] w-10 h-10 aspect-square group-hover:bg-white p-3 rounded-full transition-all duration-300">
+                            <img src="assets/icon_3.svg" alt="Icon 4">
+                        </div>
+                        <div class="space-y-2 text-start">
+                            <h3 class="font-semibold text-[#19918F] group-hover:text-white text-xl md:text-2xl transition-all duration-300">
+                                Program Unggulan
+                            </h3>
+                            <p class="text-[#717680] group-hover:text-white transition-all duration-300">
+                                Program terbaik untuk pengembangan akademik dan karakter siswa
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Item 5 -->
+                    <div class="group flex flex-col items-start p-5 md:p-7 bg-white border border-[#E9EAEB] hover:border-none hover:bg-[#19918F] rounded-2xl transition-all duration-300 relative">
+                        <div class="mb-4 bg-[#B3E3E34D] w-10 h-10 aspect-square group-hover:bg-white p-2.5 rounded-full transition-all duration-300">
+                            <img src="assets/school.svg" alt="Icon 5">
+                        </div>
+                        <div class="space-y-2 text-start">
+                            <h3 class="font-semibold text-[#19918F] group-hover:text-white text-xl md:text-2xl transition-all duration-300">
+                                Full Praktek
+                            </h3>
+                            <p class="text-[#717680] group-hover:text-white transition-all duration-300">
+                                Pembelajaran praktik untuk meningkatkan keterampilan siswa
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Item 6 -->
+                    <div class="group flex flex-col items-start p-5 md:p-7 bg-white border border-[#E9EAEB] hover:border-none hover:bg-[#19918F] rounded-2xl transition-all duration-300">
+                        <div class="mb-4 bg-[#B3E3E34D] w-10 h-10 aspect-square group-hover:bg-white p-3 rounded-full transition-all duration-300">
+                            <img src="assets/icon_6.svg" alt="Icon 6">
+                        </div>
+                        <div class="space-y-2 text-start">
+                            <h3 class="font-semibold text-[#19918F] group-hover:text-white text-xl md:text-2xl transition-all duration-300">
+                                Ekstrakulikuler Istimewa
+                            </h3>
+                            <p class="text-[#717680] group-hover:text-white transition-all duration-300">
+                                Menyediakan paralayang, berkuda, dan berenang bagi bakat siswa
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="div flex items-center justify-center w-full mt-10">
-                    <div id="scrollContainer"
-                        class="w-[90%] max-w-full flex overflow-x-auto h-96 items-center justify-start   space-x-16 p-4">
-                        <div
-                            class="min-w-[380px] max-w-[380px] z-10 h-auto bg-white text-black p-4 rounded-2xl shadow-lg flex flex-col items-center justify-center">
-
-                            <div class="w-[95%]  h-[25%] flex-col flex items-center  ">
-                                <img class="w-14 h-14 rounded-full" src="assets/raihan.png" alt="">
-                                <div class="ml-2">
-                                    <p class=" text-center font-semibold text-lg">Raihan Ganyu</p>
-                                    <p class="text-sm text-center text-gray-400">Alumni</p>
-                                </div>
-                            </div>
-                            <div class="w-[95%] h-[75%] mt-4 ">
-                                <p class="text-grey-800 text-gray-500 text-[15.5px] text-center">sekolah yang mempunyai
-                                    target yang sangat tinggi untuk lulusan nya di dunia kerja khususnya IT. sungguh
-                                    pengalaman yang sangat hebat untuk bisa belajar di sini </p>
-                            </div>
+            </div>
+        <!-- Program Studi SMP & SMK -->
+        <div class="w-full bg-gray-100">
+            <div class="w-full px-8 md:px-0 md:w-3/4 mx-auto py-20">
+                <h2 class="text-3xl md:text-4xl font-semibold text-left text-[#19918F] mb-3">Program Studi SMP & SMK</h2>
+                <p class="text-[#676E82]">Bits School menyediakan pendidikan teknologi dengan kurikulum berbasis keterampilan IT, seperti pemrograman, AI, keamanan siber, dan pengembangan perangkat lunak. Melalui metode praktis dan proyek nyata, lulusan dipersiapkan untuk bersaing di era digita</p>
+                <div class="mt-10 space-y-6">
+                    <!-- Card 1 -->
+                    <div class="bg-white p-7 rounded-xl">
+                        <div class="flex items-center gap-3">
+                            <img src="assets/user.svg" alt="User" class="w-8 h-8">
+                            <h3 class="text-xl md:text-2xl font-semibold text-[#19918F]">SMP</h3>
                         </div>
-                        <div
-                            class="min-w-[380px] max-w-[380px] z-10 h-auto bg-white text-black p-4 rounded-2xl shadow-lg flex flex-col items-center justify-center">
-
-                            <div class="w-[95%]  h-[25%] flex-col flex items-center  ">
-                                <img class="w-14 h-14 rounded-full" src="assets/keysa.png" alt="">
-                                <div class="ml-2">
-                                    <p class=" text-center font-semibold text-lg">Keysa Mahesa</p>
-                                    <p class="text-sm text-center text-gray-400">Alumni</p>
-                                </div>
+                        <ul class="mt-4 text-[#717680] space-y-2">
+                            <div class="flex items-center gap-2">
+                                <img src="assets/checklist.svg" alt="Checklist">
+                                <p>Membuat game edukasi membuat Website</p>
                             </div>
-                            <div class="w-[95%] h-[75%] mt-4 ">
-                                <p class="text-grey-800 text-gray-500 text-[15.5px] text-center">Sekolah yang sangat
-                                    keren banyak sekali aku belajar di sini mulai dari ilmu ilmu komputer sampai
-                                    kerjasama kelompok</p>
+                            <div class="flex items-center gap-2">
+                                <img src="assets/checklist.svg" alt="Checklist">
+                                <p>Membuat design graphic</p>
                             </div>
+                            <div class="flex items-center gap-2">
+                                <img src="assets/checklist.svg" alt="Checklist">
+                                <p>IOT dan Robotic</p>
+                            </div>
+                        </ul>
+                    </div>
+                
+                    <!-- Card 2 -->
+                    <div class="bg-white p-7 rounded-xl">
+                        <div class="flex items-center gap-3">
+                            <img src="assets/user.svg" alt="User" class="w-8 h-8">
+                            <h3 class="text-xl md:text-2xl font-semibold text-[#19918F]">SMK Networking</h3>
                         </div>
-                        <div
-                            class="min-w-[380px] max-w-[380px] z-10 h-auto bg-white text-black p-4 rounded-2xl shadow-lg flex flex-col items-center justify-center">
-
-                            <div class="w-[95%]  h-[25%] flex-col flex items-center  ">
-                                <img class="w-14 h-14 rounded-full" src="assets/bagas.png" alt="">
-                                <div class="ml-2">
-                                    <p class=" text-center font-semibold text-lg">Bagas Umar</p>
-                                    <p class="text-sm text-center text-gray-400">Alumni</p>
-                                </div>
+                        <ul class="mt-4 text-[#717680] space-y-2">
+                            <div class="flex items-center gap-2">
+                                <img src="assets/checklist.svg" alt="Checklist">
+                                <p>Program 3 tahun (2 tahun belajar + 1 tahun PKL)</p>
                             </div>
-                            <div class="w-[95%] h-[75%] mt-4 ">
-                                <p class="text-grey-800 text-gray-500 text-[15.5px] text-center">Saya merasa sangat siap
-                                    untuk memasuki dunia kerja setelah lulus dari sekolah berbasis IT. Sejak dini, kami
-                                    sudah dibekali keterampilan digital seperti pemrograman, analisis data, dan keamanan
-                                    siber. Hal ini memberi saya keunggulan dibanding lulusan dari sekolah lain.</p>
+                            <div class="flex items-center gap-2">
+                                <img src="assets/checklist.svg" alt="Checklist">
+                                <p>Mempelajari jaringan komputer (Cisco & Mikrotik)</p>
                             </div>
+                            <div class="flex items-center gap-2">
+                                <img src="assets/checklist.svg" alt="Checklist">
+                                <p>Mempelajari Cloud Server</p>
+                            </div>
+                        </ul>
+                    </div>
+                
+                    <!-- Card 3 -->
+                    <div class="bg-white p-7 rounded-xl">
+                        <div class="flex items-center gap-3">
+                            <img src="assets/user.svg" alt="User" class="w-8 h-8">
+                            <h3 class="text-xl md:text-2xl font-semibold text-[#19918F]">SMK Programming</h3>
                         </div>
-
+                        <ul class="mt-4 text-[#717680] space-y-2">
+                            <div class="flex items-center gap-2">
+                                <img src="assets/checklist.svg" alt="Checklist">
+                                <p>Program 3 tahun (2 tahun belajar + 1 tahun PKL)</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="assets/checklist.svg" alt="Checklist">
+                                <p>Membuat aplikasi berbasis Web</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="assets/checklist.svg" alt="Checklist">
+                                <p>Membuat aplikasi Mobile (Android)</p>
+                            </div>
+                        </ul>
+                    </div>
+                
+                    <!-- Card 4 -->
+                    <div class="bg-white p-7 rounded-xl">
+                        <div class="flex items-center gap-3">
+                            <img src="assets/user.svg" alt="User" class="w-8 h-8">
+                            <h3 class="text-xl md:text-2xl font-semibold text-[#19918F]">SMK Designer</h3>
+                        </div>
+                        <ul class="mt-4 text-[#717680] space-y-2">
+                            <div class="flex items-center gap-2">
+                                <img src="assets/checklist.svg" alt="Checklist">
+                                <p>Program 3 tahun (2 tahun belajar + 1 tahun PKL)</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="assets/checklist.svg" alt="Checklist">
+                                <p>Mempelajari UI/UX Design</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="assets/checklist.svg" alt="Checklist">
+                                <p>Mempelajari Design Graphic</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="assets/checklist.svg" alt="Checklist">
+                                <p>Mempelajari Multimedia</p>
+                            </div>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="flex justify-center  space-x-2 mb-40">
-            <div id="indicator1" class="w-4 h-4 bg-[#19918F] delay-75 duration-300 animate-bounce rounded-full"></div>
-            <div id="indicator2" class="w-4 h-4 bg-gray-300 animate-bounce  rounded-full"></div>
-            <div id="indicator3" class="w-4 h-4 bg-[#19918F] animate-bounce rounded-full"></div>
+        <!-- Testimoni -->
+        <div class="w-full px-8 md:px-0 mx-auto py-12 overflow-hidden">
+            <p class="text-[#19918F] text-center">Testimoni</p>
+            <h2 class="text-3xl md:text-4xl font-semibold text-center text-[#19918F] mt-1">SMP & SMK Bogor Islamic <br> Techno School</h2>
+            
+            <!-- Top Row - Scrolls Right -->
+            <div class="mt-16 overflow-hidden testimonial-scroll">
+                <div class="testimonial-container animate-scroll-right">
+                    <div class="testimonial-group">
+                        <!-- Original Items -->
+                        <div class="testimonial-item">
+                            <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#E9EAEB] w-[600px]">
+                                <p class="text-gray-600 mb-4 italic">"Saya melihat perkembangan yang luar biasa pada anak saya sejak bersekolah di lingkungan berbasis IT. Ia menjadi lebih mandiri dalam belajar dan lebih siap menghadapi dunia digital."</p>
+                                <div class="w-full border-t border-[#E9EAEB]"></div>
+                                <div class="mt-4">
+                                    <p class="font-semibold text-gray-800">Mu Sumarti</p>
+                                    <p class="text-sm text-[#676E82]">Orang Tua Murid</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#E9EAEB] w-[600px]">
+                                <p class="text-gray-600 mb-4 italic">"Mengajar di sekolah IT lebih interaktif dengan LMS, memungkinkan pemberian tugas, kuis online, dan pemantauan kemajuan siswa secara real-time, meningkatkan efektivitas pembelajaran."</p>
+                                <div class="w-full border-t border-[#E9EAEB]"></div>
+                                <div class="mt-4">
+                                    <p class="font-semibold text-gray-800">Andi Mulyono, S.Pd</p>
+                                    <p class="text-sm text-[#676E82]">Director</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#E9EAEB] w-[600px]">
+                                <p class="text-gray-600 mb-4 italic">"Pendidikan berbasis IT memberikan siswa dengan keterampilan digital yang relevan. Dengan teknologi dan e-learning, proses belajar menjadi lebih interaktif, efektif, dan sesuai dengan kebutuhan masa depan."</p>
+                                <div class="w-full border-t border-[#E9EAEB]"></div>
+                                <div class="mt-4">
+                                    <p class="font-semibold text-gray-800">Andi Mulyono, S.Pd</p>
+                                    <p class="text-sm text-[#676E82]">Director</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-group">
+                        <!-- Duplicate Items for seamless looping -->
+                        <div class="testimonial-item">
+                            <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#E9EAEB] w-[600px]">
+                                <p class="text-gray-600 mb-4 italic">"Saya melihat perkembangan yang luar biasa pada anak saya sejak bersekolah di lingkungan berbasis IT. Ia menjadi lebih mandiri dalam belajar dan lebih siap menghadapi dunia digital."</p>
+                                <div class="w-full border-t border-[#E9EAEB]"></div>
+                                <div class="mt-4">
+                                    <p class="font-semibold text-gray-800">Mu Sumarti</p>
+                                    <p class="text-sm text-[#676E82]">Orang Tua Murid</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#E9EAEB] w-[600px]">
+                                <p class="text-gray-600 mb-4 italic">"Mengajar di sekolah IT lebih interaktif dengan LMS, memungkinkan pemberian tugas, kuis online, dan pemantauan kemajuan siswa secara real-time, meningkatkan efektivitas pembelajaran."</p>
+                                <div class="w-full border-t border-[#E9EAEB]"></div>
+                                <div class="mt-4">
+                                    <p class="font-semibold text-gray-800">Andi Mulyono, S.Pd</p>
+                                    <p class="text-sm text-[#676E82]">Director</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#E9EAEB] w-[600px]">
+                                <p class="text-gray-600 mb-4 italic">"Pendidikan berbasis IT memberikan siswa dengan keterampilan digital yang relevan. Dengan teknologi dan e-learning, proses belajar menjadi lebih interaktif, efektif, dan sesuai dengan kebutuhan masa depan."</p>
+                                <div class="w-full border-t border-[#E9EAEB]"></div>
+                                <div class="mt-4">
+                                    <p class="font-semibold text-gray-800">Andi Mulyono, S.Pd</p>
+                                    <p class="text-sm text-[#676E82]">Director</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Row - Scrolls Left -->
+            <div class="mt-8 overflow-hidden testimonial-scroll">
+                <div class="testimonial-container animate-scroll-left">
+                    <div class="testimonial-group">
+                        <!-- Original Items -->
+                        <div class="testimonial-item">
+                            <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#E9EAEB] w-[600px]">
+                                <p class="text-gray-600 mb-4 italic">"Pendidikan berbasis IT memberikan siswa dengan keterampilan digital yang relevan. Dengan teknologi dan e-learning, proses belajar menjadi lebih interaktif, efektif, dan sesuai dengan kebutuhan masa depan."</p>
+                                <div class="w-full border-t border-[#E9EAEB]"></div>
+                                <div class="mt-4">
+                                    <p class="font-semibold text-gray-800">Andi Mulyono, S.Pd</p>
+                                    <p class="text-sm text-[#676E82]">Director</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#E9EAEB] w-[600px]">
+                                <p class="text-gray-600 mb-4 italic">"Mengajar di sekolah IT lebih interaktif dengan LMS, memungkinkan pemberian tugas, kuis online, dan pemantauan kemajuan siswa secara real-time, meningkatkan efektivitas pembelajaran."</p>
+                                <div class="w-full border-t border-[#E9EAEB]"></div>
+                                <div class="mt-4">
+                                    <p class="font-semibold text-gray-800">Andi Mulyono, S.Pd</p>
+                                    <p class="text-sm text-[#676E82]">Director</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#E9EAEB] w-[600px]">
+                                <p class="text-gray-600 mb-4 italic">"Saya melihat perkembangan yang luar biasa pada anak saya sejak bersekolah di lingkungan berbasis IT. Ia menjadi lebih mandiri dalam belajar dan lebih siap menghadapi dunia digital."</p>
+                                <div class="w-full border-t border-[#E9EAEB]"></div>
+                                <div class="mt-4">
+                                    <p class="font-semibold text-gray-800">Mu Sumarti</p>
+                                    <p class="text-sm text-[#676E82]">Orang Tua Murid</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-group">
+                        <!-- Duplicate Items for seamless looping -->
+                        <div class="testimonial-item">
+                            <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#E9EAEB] w-[600px]">
+                                <p class="text-gray-600 mb-4 italic">"Pendidikan berbasis IT memberikan siswa dengan keterampilan digital yang relevan. Dengan teknologi dan e-learning, proses belajar menjadi lebih interaktif, efektif, dan sesuai dengan kebutuhan masa depan."</p>
+                                <div class="w-full border-t border-[#E9EAEB]"></div>
+                                <div class="mt-4">
+                                    <p class="font-semibold text-gray-800">Andi Mulyono, S.Pd</p>
+                                    <p class="text-sm text-[#676E82]">Director</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#E9EAEB] w-[600px]">
+                                <p class="text-gray-600 mb-4 italic">"Mengajar di sekolah IT lebih interaktif dengan LMS, memungkinkan pemberian tugas, kuis online, dan pemantauan kemajuan siswa secara real-time, meningkatkan efektivitas pembelajaran."</p>
+                                <div class="w-full border-t border-[#E9EAEB]"></div>
+                                <div class="mt-4">
+                                    <p class="font-semibold text-gray-800">Andi Mulyono, S.Pd</p>
+                                    <p class="text-sm text-[#676E82]">Director</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#E9EAEB] w-[600px]">
+                                <p class="text-gray-600 mb-4 italic">"Saya melihat perkembangan yang luar biasa pada anak saya sejak bersekolah di lingkungan berbasis IT. Ia menjadi lebih mandiri dalam belajar dan lebih siap menghadapi dunia digital."</p>
+                                <div class="w-full border-t border-[#E9EAEB]"></div>
+                                <div class="mt-4">
+                                    <p class="font-semibold text-gray-800">Mu Sumarti</p>
+                                    <p class="text-sm text-[#676E82]">Orang Tua Murid</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    </section>
     <section id="kontak">
-        <div class="w-full px-8 md:px-0 md:w-3/4 mx-auto">
+        <div class="w-full px-8 md:px-0 md:w-3/4 mt-20 mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <!-- Denah Lokasi -->
                 <div>
